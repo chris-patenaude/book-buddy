@@ -12,6 +12,25 @@ nlu:
       - know any good reads
       - need a book suggestion
 
+  - intent: inform
+    examples: |
+      - [sci-fi](genre)
+      - [sci fi](genre)
+      - [science fiction](genre)
+      - [syfi](genre)
+      - [fantasy](genre)
+      - [mystery](genre)
+      - [horror](genre)
+      - [romance](genre)
+      - i'd like a [sci-fi](genre) book please
+      - [horror](genre) books are my favorite
+      - [mystery](genre) books
+      - i want a [fantasy](genre) book
+      - i like [romances](genre)
+      - i'm looking for a [sience fiction](genre)
+      - [](genre)
+      - [](genre)
+
   - intent: greet
     examples: |
       - hey
