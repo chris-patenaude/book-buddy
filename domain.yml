@@ -7,8 +7,36 @@ intents:
   - deny
   - bot_challenge
   - wants_book_suggestion
+  - inform
+
+actions:
+  - validate_genre_form
+  - utter_result
+  - action_submit_genre_form
+
+entities:
+  - genre
+
+forms:
+  genre_form:
+    required_slots:
+      - genre
+
+slots:
+  genre:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: genre
 
 responses:
+  utter_result:
+    - text: "You selected {genre}"
+
+  utter_ask_genre:
+    - text: "What genre do you like?"
+
   utter_greet:
     - text: "Hi!"
 
