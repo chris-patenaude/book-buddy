@@ -28,8 +28,12 @@ nlu:
       - i want a [fantasy](genre) book
       - i like [romances](genre)
       - i'm looking for a [sience fiction](genre)
-      - [](genre)
-      - [](genre)
+
+  - synonym: sci-fi
+    examples: |
+      - sci fi
+      - science fiction
+      - syfi
 
   - intent: greet
     examples: |
@@ -79,9 +83,31 @@ nlu:
       - no way
       - not really
 
+  - intent: thank
+    examples: |
+      - thanks
+      - thank you
+      - ty
+      - ty!
+      - TY
+      - thx
+      - oh thats great, thanks!
+      - I appreciate it
+      - thank you so much
+
   - intent: bot_challenge
     examples: |
       - are you a bot?
       - are you a human?
       - am I talking to a bot?
       - am I talking to a human?
+
+  - intent: help
+    examples: |
+      - help
+      - what can you do?
+      - what are your functions?
+      - how does this work
+      - what are your abilities 
+      - how can you help me
+      - i need assistance

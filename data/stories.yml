@@ -7,7 +7,17 @@ stories:
       - action: utter_greet
       - action: utter_like_to_read
       - intent: affirm
-      - action: utter_book_suggestion
+      - action: utter_ask_genre
+      - action: genre_form
+      - active_loop: genre_form
+
+  - story: does not likes books path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - action: utter_like_to_read
+      - intent: deny
+      - action: utter_ask_change_mind
 
   - story: bot inquery path
     steps:

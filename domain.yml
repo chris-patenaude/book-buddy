@@ -8,6 +8,8 @@ intents:
   - bot_challenge
   - wants_book_suggestion
   - inform
+  - thanks
+  - help
 
 actions:
   - validate_genre_form
@@ -31,11 +33,26 @@ slots:
         entity: genre
 
 responses:
+  utter_help:
+    - text: "I can see yo need some assistance. I can recomend books by genre and have light conversations. Just say something like, 'know any good books?.'"
+
+  utter_your_welcome:
+    - text: "Your welcome :)"
+
   utter_result:
     - text: "You selected {genre}"
 
   utter_ask_genre:
     - text: "What genre do you like?"
+
+  utter_ask_change_mind:
+    - text: "If you change your mind, I know some great books to read. Just ask!"
+
+  utter_ask_anything_else:
+    - text: "Is there anything else I can do for you?"
+
+  utter_sad:
+    - text: "Sorry to hear that."
 
   utter_greet:
     - text: "Hi!"
